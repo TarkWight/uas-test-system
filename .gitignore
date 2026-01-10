@@ -1,0 +1,23 @@
+# ---- CMake generated ----
+CMakeCache.txt
+
+# ---- Qt / QtCreator ----
+*.pro.user*
+*.qbs.user*
+CMakeLists.txt.user*
+
+# ---- build dirs ----
+build/
+cmake-build-*/
+out/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- Drawio ----
+*.bkp
+*.dtmp
+
+# ---- Vim ----
+.*.swp

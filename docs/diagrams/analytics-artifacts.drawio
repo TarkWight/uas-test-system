@@ -1,43 +1,133 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9">
   <diagram name="МПО" id="hKhG68l07HkepAyIeDOR">
-    <mxGraphModel dx="757" dy="613" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="728" dy="589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="8g1EldiRL4zR9eZ6RqOk-28" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Выбирает тип теста" vertex="1">
-          <mxGeometry height="70" width="140" x="410" y="980" as="geometry" />
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-46" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Выбирает тип теста" vertex="1">
+          <mxGeometry height="80" width="160" x="760" y="360" as="geometry" />
         </mxCell>
-        <mxCell id="8g1EldiRL4zR9eZ6RqOk-29" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Устанавливает время теста" vertex="1">
-          <mxGeometry height="70" width="140" x="250" y="980" as="geometry" />
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-47" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Устанавливает время теста" vertex="1">
+          <mxGeometry height="80" width="160" x="560" y="360" as="geometry" />
         </mxCell>
-        <mxCell id="8g1EldiRL4zR9eZ6RqOk-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Запускает/останавливает двигатели" vertex="1">
-          <mxGeometry height="70" width="140" x="570" y="980" as="geometry" />
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-48" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Запускает/останавливает двигатели" vertex="1">
+          <mxGeometry height="80" width="160" x="960" y="360" as="geometry" />
         </mxCell>
-        <mxCell id="8g1EldiRL4zR9eZ6RqOk-31" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-32" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="8g1EldiRL4zR9eZ6RqOk-33">
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-49" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-50" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="8g1EldiRL4zR9eZ6RqOk-51">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8g1EldiRL4zR9eZ6RqOk-32" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Оператор" vertex="1">
-          <mxGeometry height="60" width="30" x="470" y="660" as="geometry" />
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-50" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Оператор" vertex="1">
+          <mxGeometry height="60" width="30" x="265" y="24" as="geometry" />
         </mxCell>
-        <mxCell id="8g1EldiRL4zR9eZ6RqOk-33" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Контролирует график управления" vertex="1">
-          <mxGeometry height="70" width="140" x="410" y="830" as="geometry" />
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-51" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Контролирует график управления" vertex="1">
+          <mxGeometry height="80" width="160" x="760" y="200" as="geometry" />
         </mxCell>
-        <mxCell id="8g1EldiRL4zR9eZ6RqOk-34" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-30" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-33" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-52" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-48" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-51" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
           <mxGeometry relative="1" width="160" as="geometry">
-            <mxPoint x="660" y="860" as="sourcePoint" />
-            <mxPoint x="840" y="860" as="targetPoint" />
+            <mxPoint x="1030" y="230" as="sourcePoint" />
+            <mxPoint x="1210" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8g1EldiRL4zR9eZ6RqOk-35" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-28" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-33" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-53" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-46" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-51" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
           <mxGeometry relative="1" width="160" as="geometry">
-            <mxPoint x="710" y="799.4699999999998" as="sourcePoint" />
-            <mxPoint x="650" y="865" as="targetPoint" />
+            <mxPoint x="1080" y="169.4699999999998" as="sourcePoint" />
+            <mxPoint x="1020" y="235" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8g1EldiRL4zR9eZ6RqOk-36" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-29" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-33" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-54" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-47" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-51" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
           <mxGeometry relative="1" width="160" as="geometry">
-            <mxPoint x="740" y="750" as="sourcePoint" />
-            <mxPoint x="340" y="900" as="targetPoint" />
+            <mxPoint x="1110" y="120" as="sourcePoint" />
+            <mxPoint x="710" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-55" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-50" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="8g1EldiRL4zR9eZ6RqOk-56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="184" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-56" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Контролирует график&lt;div&gt;телеметрии&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="1280" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-57" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Выбирает ось" vertex="1">
+          <mxGeometry height="80" width="160" x="1400" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-58" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Удаляет ось" vertex="1">
+          <mxGeometry height="80" width="160" x="1400" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-59" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Устанавливает шаг графика в секундах" vertex="1">
+          <mxGeometry height="80" width="160" x="1200" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-60" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-59" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-56" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="1140" y="280" as="sourcePoint" />
+            <mxPoint x="1380" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-61" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-57" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-56" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="1520" y="290" as="sourcePoint" />
+            <mxPoint x="1520" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-62" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-58" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-57" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" x="-0.3333" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1320" y="444" as="sourcePoint" />
+            <mxPoint x="1376" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-63" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Просматривает графики управления в реальном времени" vertex="1">
+          <mxGeometry height="80" width="160" x="200" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-64" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-50" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;labelBackgroundColor=none;fontColor=default;" target="8g1EldiRL4zR9eZ6RqOk-63">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="295" y="70" as="sourcePoint" />
+            <mxPoint x="625" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-65" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Редактирует параметры графиков" vertex="1">
+          <mxGeometry height="80" width="160" x="200" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-66" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Редактирует ось" vertex="1">
+          <mxGeometry height="80" width="160" x="200" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-67" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Редактирует кривую" vertex="1">
+          <mxGeometry height="80" width="160" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-68" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Редактирует параметры изображения" vertex="1">
+          <mxGeometry height="80" width="160" x="400" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-69" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Настраивает подзаголовки" vertex="1">
+          <mxGeometry height="80" width="160" x="720" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-70" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-67" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-65" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="120" y="535" as="sourcePoint" />
+            <mxPoint x="105" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-71" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-66" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-65" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="315" y="500" as="sourcePoint" />
+            <mxPoint x="190" y="645" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-72" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-68" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-65" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="240" y="515" as="sourcePoint" />
+            <mxPoint x="415" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-73" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-69" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-63" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="705" y="485" as="sourcePoint" />
+            <mxPoint x="640" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-74" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-65" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-63" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="150" y="310" as="sourcePoint" />
+            <mxPoint x="215" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>

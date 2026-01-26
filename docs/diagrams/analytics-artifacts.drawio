@@ -4,6 +4,42 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-28" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Выбирает тип теста" vertex="1">
+          <mxGeometry height="70" width="140" x="410" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-29" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Устанавливает время теста" vertex="1">
+          <mxGeometry height="70" width="140" x="250" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Запускает/останавливает двигатели" vertex="1">
+          <mxGeometry height="70" width="140" x="570" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-31" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-32" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="8g1EldiRL4zR9eZ6RqOk-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-32" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Оператор" vertex="1">
+          <mxGeometry height="60" width="30" x="470" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-33" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Контролирует график управления" vertex="1">
+          <mxGeometry height="70" width="140" x="410" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-34" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-30" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-33" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="660" y="860" as="sourcePoint" />
+            <mxPoint x="840" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-35" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-28" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-33" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="710" y="799.4699999999998" as="sourcePoint" />
+            <mxPoint x="650" y="865" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8g1EldiRL4zR9eZ6RqOk-36" edge="1" parent="1" source="8g1EldiRL4zR9eZ6RqOk-29" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="8g1EldiRL4zR9eZ6RqOk-33" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="740" y="750" as="sourcePoint" />
+            <mxPoint x="340" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

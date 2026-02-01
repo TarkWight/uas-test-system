@@ -1285,6 +1285,87 @@
         <mxCell id="t7MX4CS2czQTxY27QP6G-37" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Оператор&lt;/span&gt;" vertex="1">
           <mxGeometry height="26" width="80" x="20" y="64" as="geometry" />
         </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-38" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="420" width="440" x="1120" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-39" parent="t7MX4CS2czQTxY27QP6G-38" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=160;tabHeight=20;tabPosition=left;html=1;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="420" width="440" as="geometry" />
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-40" parent="t7MX4CS2czQTxY27QP6G-38" style="text;whiteSpace=wrap;" value="Validate and Start Test Run" vertex="1">
+          <mxGeometry height="20" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-41" edge="1" parent="t7MX4CS2czQTxY27QP6G-38" source="t7MX4CS2czQTxY27QP6G-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endArrow=block;endFill=1;" target="t7MX4CS2czQTxY27QP6G-49">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="130" />
+              <mxPoint x="260" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-42" connectable="0" parent="t7MX4CS2czQTxY27QP6G-41" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="validate(TestConfig)" vertex="1">
+          <mxGeometry relative="1" x="-0.5768" y="3" as="geometry">
+            <mxPoint x="26" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-43" edge="1" parent="t7MX4CS2czQTxY27QP6G-38" source="t7MX4CS2czQTxY27QP6G-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endArrow=block;endFill=1;" target="t7MX4CS2czQTxY27QP6G-49">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="210" />
+              <mxPoint x="250" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-44" connectable="0" parent="t7MX4CS2czQTxY27QP6G-43" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="createTestRun(TestConfig)" vertex="1">
+          <mxGeometry relative="1" x="-0.6958" y="2" as="geometry">
+            <mxPoint x="46" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-45" parent="t7MX4CS2czQTxY27QP6G-38" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="&lt;u&gt;:Test Run Controller&lt;/u&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(Application)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="280" width="100" x="120" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-46" edge="1" parent="t7MX4CS2czQTxY27QP6G-38" source="t7MX4CS2czQTxY27QP6G-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;dashed=1;endArrow=open;endFill=0;" target="t7MX4CS2czQTxY27QP6G-45" value="ValidationError">
+          <mxGeometry relative="1" x="0.2453" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="250" y="170" />
+              <mxPoint x="250" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-47" edge="1" parent="t7MX4CS2czQTxY27QP6G-38" source="t7MX4CS2czQTxY27QP6G-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;dashed=1;endArrow=open;endFill=0;" target="t7MX4CS2czQTxY27QP6G-45">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="240" />
+              <mxPoint x="250" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-48" connectable="0" parent="t7MX4CS2czQTxY27QP6G-47" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="TestRun" vertex="1">
+          <mxGeometry relative="1" x="0.6017" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-49" parent="t7MX4CS2czQTxY27QP6G-38" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="&lt;u&gt;:Test Definition&lt;/u&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(Domain)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="280" width="100" x="280" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-50" parent="t7MX4CS2czQTxY27QP6G-38" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=80;height=20;" value="&lt;b&gt;alt&lt;/b&gt;" vertex="1">
+          <mxGeometry height="120" width="340" x="50" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-51" parent="t7MX4CS2czQTxY27QP6G-50" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;[validation failed]&lt;/b&gt;" vertex="1">
+          <mxGeometry height="10" width="110" x="120" as="geometry" />
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-52" parent="t7MX4CS2czQTxY27QP6G-50" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;dashed=1;dashPattern=1 2;" value="" vertex="1">
+          <mxGeometry height="10" width="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-53" parent="t7MX4CS2czQTxY27QP6G-50" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;[validation ok]&lt;/b&gt;" vertex="1">
+          <mxGeometry height="10" width="90" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-54" parent="t7MX4CS2czQTxY27QP6G-38" style="html=1;whiteSpace=wrap;" value="&lt;u&gt;:Test Run Controller&lt;/u&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(Application)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="120" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="t7MX4CS2czQTxY27QP6G-55" parent="t7MX4CS2czQTxY27QP6G-38" style="html=1;whiteSpace=wrap;" value="&lt;u&gt;:Test Definition&lt;/u&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(Domain)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="290" y="330" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

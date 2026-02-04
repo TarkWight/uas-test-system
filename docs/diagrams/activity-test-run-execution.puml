@@ -1,0 +1,74 @@
+@startuml
+title Activity — Test Run Execution
+
+|Application|
+start
+:Перевести TestRun в состояние Running;
+
+fork
+    |Infra|
+    :Подключиться к приводам;
+    :Инициализировать управление осями;
+fork again
+    |Infra|
+    :Запустить поток телеметрии;
+end fork
+
+|Application|
+:Начать цикл выполнения прогона;
+
+while (Прогон активен?) is (да)
+    fork
+        |Infra|
+        :Отправлять команды приводам;
+    fork again
+        |Infra|
+        :Принимать телеметрию;
+    fork again
+        |UI|
+        :Обновлять логи и графики;
+    end fork
+
+    |Application|
+if (Запрос паузы?) then (да)
+    :Остановить выполнение команд;
+    |Domain|
+    :Перевести TestRun в Paused;
+endif
+
+|Application|
+:Ожидать внешнего события;
+
+|UI|
+if (Оператор нажал Resume?) then (да)
+    |Application|
+    :Обработать команду Resume;
+    |Domain|
+    :Перевести TestRun в Running;
+endif
+
+    if (Ошибка?) then (да)
+        |Domain|
+        :Перевести TestRun в Failed;
+        stop
+    endif
+
+    if (Остановка оператором?) then (да)
+        |Domain|
+        :Перевести TestRun в Aborted;
+        stop
+    endif
+endwhile (нет)
+
+|Domain|
+:Перевести TestRun в Completed;
+
+|Application|
+:Остановить телеметрию;
+:Отключиться от приводов;
+
+|UI|
+:Показать результат прогона;
+
+stop
+@enduml

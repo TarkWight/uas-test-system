@@ -1,0 +1,22 @@
+@startuml
+title State - Test Run
+[*] --> Created
+
+Created --> Ready : configuration validated
+Ready --> Running : start (user)
+
+Running --> Paused : pause (user)
+Paused --> Running : resume (user)
+
+Running --> Completed : finished normally
+
+Running --> Aborted : abort (user)
+Paused --> Aborted : abort (user)
+
+Running --> Failed : error (system)
+Paused --> Failed : error (system)
+
+Completed --> [*]
+Aborted --> [*]
+Failed --> [*]
+@enduml

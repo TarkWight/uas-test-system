@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9" pages="8">
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9" pages="9">
   <diagram name="ДВИ" id="hKhG68l07HkepAyIeDOR">
     <mxGraphModel dx="2655" dy="1021" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -463,7 +463,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="CPtE8ESqgV24gFLgoDAz" name="ДВИ - мониторинг и визуализация">
-    <mxGraphModel dx="391" dy="2145" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="480" dy="2145" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -512,6 +512,45 @@
             <mxPoint x="585" y="671" as="sourcePoint" />
             <mxPoint x="3811" y="2008" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="d0T5tdOai_pGtNJ57egU" name="ДВИ - автоматические функции системы">
+    <mxGraphModel dx="720" dy="1464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="T65KDH6yWU4i8_-a-7Ig-1" parent="1" style="shape=folder;fontStyle=1;tabWidth=130;tabHeight=20;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;" value="Система испытаний" vertex="1">
+          <mxGeometry height="420" width="239" x="721" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="T65KDH6yWU4i8_-a-7Ig-2" parent="T65KDH6yWU4i8_-a-7Ig-1" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="294" relative="1" width="239.00000000000003" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFd_S1ArcRZI6PD1prMd-1" edge="1" parent="1" source="yFd_S1ArcRZI6PD1prMd-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;labelBackgroundColor=none;fontColor=default;" target="yFd_S1ArcRZI6PD1prMd-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="836" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yFd_S1ArcRZI6PD1prMd-2" edge="1" parent="1" source="yFd_S1ArcRZI6PD1prMd-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;labelBackgroundColor=none;fontColor=default;" target="yFd_S1ArcRZI6PD1prMd-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yFd_S1ArcRZI6PD1prMd-3" edge="1" parent="1" source="yFd_S1ArcRZI6PD1prMd-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;labelBackgroundColor=none;fontColor=default;" target="yFd_S1ArcRZI6PD1prMd-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yFd_S1ArcRZI6PD1prMd-4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;labelBackgroundColor=none;" value="Система" vertex="1">
+          <mxGeometry height="60" width="30" x="591" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="yFd_S1ArcRZI6PD1prMd-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;labelBackgroundColor=none;" value="Формировать комментарий конфигурации" vertex="1">
+          <mxGeometry height="80" width="160" x="760" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="yFd_S1ArcRZI6PD1prMd-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;labelBackgroundColor=none;" value="Оценивать готовность к эксплуатации" vertex="1">
+          <mxGeometry height="80" width="160" x="760" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="yFd_S1ArcRZI6PD1prMd-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;labelBackgroundColor=none;" value="Генерировать отчёт по прогону" vertex="1">
+          <mxGeometry height="80" width="160" x="760" y="600" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9" pages="6">
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9" pages="7">
   <diagram name="ДВИ" id="hKhG68l07HkepAyIeDOR">
     <mxGraphModel dx="2045" dy="976" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -370,6 +370,93 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-NB5XvCv-xTxXg_nMbEa-7" edge="1" parent="1" source="weJU3hPJEwrxofdK4KWs-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="weJU3hPJEwrxofdK4KWs-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="wlZ4LOwSdlB33dVBNO5X" name="ДВИ - конфигурация и подготовка испытаний">
+    <mxGraphModel dx="1661" dy="851" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="csSg_UI5VHEEqKLwVrYq-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Оператор" vertex="1">
+          <mxGeometry height="60" width="30" x="-760" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="csSg_UI5VHEEqKLwVrYq-2" parent="1" style="shape=folder;fontStyle=1;tabWidth=130;tabHeight=20;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;" value="Система испытаний" vertex="1">
+          <mxGeometry height="620" width="800" x="-580" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="csSg_UI5VHEEqKLwVrYq-3" parent="csSg_UI5VHEEqKLwVrYq-2" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="434" relative="1" width="800.0000000000001" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mNdexT2dA8qmTijeYeTs-1" parent="csSg_UI5VHEEqKLwVrYq-2" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;labelBackgroundColor=none;" value="Настраивает протокол испытаний" vertex="1">
+          <mxGeometry height="80" width="160" x="40" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="mNdexT2dA8qmTijeYeTs-2" parent="csSg_UI5VHEEqKLwVrYq-2" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;labelBackgroundColor=none;" value="Делает расчёт испытаний" vertex="1">
+          <mxGeometry height="80" width="160" x="40" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="mNdexT2dA8qmTijeYeTs-3" parent="csSg_UI5VHEEqKLwVrYq-2" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Установить параметры по Бофорту" vertex="1">
+          <mxGeometry height="80" width="160" x="320" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="mNdexT2dA8qmTijeYeTs-4" parent="csSg_UI5VHEEqKLwVrYq-2" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Установить направление ветра" vertex="1">
+          <mxGeometry height="80" width="160" x="320" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="mNdexT2dA8qmTijeYeTs-5" parent="csSg_UI5VHEEqKLwVrYq-2" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Установить угол атаки" vertex="1">
+          <mxGeometry height="80" width="160" x="320" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="mNdexT2dA8qmTijeYeTs-6" parent="csSg_UI5VHEEqKLwVrYq-2" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Настроить воздействие ветра" vertex="1">
+          <mxGeometry height="80" width="160" x="40" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="mNdexT2dA8qmTijeYeTs-7" edge="1" parent="csSg_UI5VHEEqKLwVrYq-2" source="mNdexT2dA8qmTijeYeTs-6" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="mNdexT2dA8qmTijeYeTs-3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" x="-0.0011" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="708" y="-25" as="sourcePoint" />
+            <mxPoint x="90" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mNdexT2dA8qmTijeYeTs-10" parent="csSg_UI5VHEEqKLwVrYq-2" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Задать формулу воздействия" vertex="1">
+          <mxGeometry height="80" width="160" x="320" y="49.99760924386328" as="geometry" />
+        </mxCell>
+        <mxCell id="mNdexT2dA8qmTijeYeTs-12" parent="csSg_UI5VHEEqKLwVrYq-2" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Выбрать шаблон формулы" vertex="1">
+          <mxGeometry height="80" width="160" x="600" y="49.99760924386328" as="geometry" />
+        </mxCell>
+        <mxCell id="mNdexT2dA8qmTijeYeTs-13" edge="1" parent="csSg_UI5VHEEqKLwVrYq-2" source="mNdexT2dA8qmTijeYeTs-12" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="mNdexT2dA8qmTijeYeTs-10" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" x="-0.0011" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="640" y="189.99760924386328" as="sourcePoint" />
+            <mxPoint x="620" y="109.99760924386328" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="csSg_UI5VHEEqKLwVrYq-9" edge="1" parent="csSg_UI5VHEEqKLwVrYq-2" source="mNdexT2dA8qmTijeYeTs-6" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="mNdexT2dA8qmTijeYeTs-4" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" x="-0.0011" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="310" y="540" as="sourcePoint" />
+            <mxPoint x="310" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="csSg_UI5VHEEqKLwVrYq-10" edge="1" parent="csSg_UI5VHEEqKLwVrYq-2" source="mNdexT2dA8qmTijeYeTs-6" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="mNdexT2dA8qmTijeYeTs-10" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" x="-0.0011" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="460" y="160" as="sourcePoint" />
+            <mxPoint x="460" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="csSg_UI5VHEEqKLwVrYq-11" edge="1" parent="csSg_UI5VHEEqKLwVrYq-2" source="mNdexT2dA8qmTijeYeTs-5" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="mNdexT2dA8qmTijeYeTs-6" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" x="-0.0011" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="190" y="304" as="sourcePoint" />
+            <mxPoint x="150" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="csSg_UI5VHEEqKLwVrYq-12" edge="1" parent="1" source="csSg_UI5VHEEqKLwVrYq-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="mNdexT2dA8qmTijeYeTs-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="csSg_UI5VHEEqKLwVrYq-13" edge="1" parent="1" source="csSg_UI5VHEEqKLwVrYq-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="mNdexT2dA8qmTijeYeTs-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="csSg_UI5VHEEqKLwVrYq-14" edge="1" parent="1" source="csSg_UI5VHEEqKLwVrYq-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="mNdexT2dA8qmTijeYeTs-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>

@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+actor "Оператор" as Operator
+
+rectangle "Система испытаний" {
+  (Запустить прогон испытаний) as UC_Start
+  (Приостановить прогон) as UC_Pause
+  (Возобновить прогон) as UC_Resume
+  (Остановить прогон) as UC_Abort
+  (Просматривать состояние прогона) as UC_Status
+}
+
+Operator --> UC_Start
+Operator --> UC_Pause
+Operator --> UC_Resume
+Operator --> UC_Abort
+Operator --> UC_Status
+@enduml

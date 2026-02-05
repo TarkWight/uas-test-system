@@ -1,0 +1,77 @@
+@startuml
+title Sequence — Start & Execute Test Run
+
+actor Operator
+
+participant "UI\n(Boundary)" as UI
+participant "TestRun Controller\n(Application)" as APP
+participant "TestRun\n(Domain)" as RUN
+participant "Axis Gateway\n(Infra)" as AXIS
+participant "Telemetry Channel\n(Infra)" as TEL
+
+Operator -> UI : press Start
+UI -> APP : startTest()
+
+APP -> AXIS : connect()
+AXIS --> APP : connected / failed
+
+alt connection failed
+    APP -> UI : show error "Axes unavailable"
+    return
+end
+
+APP -> AXIS : initializeAxes()
+AXIS --> APP : ok / error
+
+alt init failed
+    APP -> UI : show error "Axis init failed"
+    return
+end
+
+APP -> TEL : startTelemetry()
+TEL --> APP : started
+
+APP -> RUN : setRunning()
+
+loop TestRun active
+
+    APP -> AXIS : sendCommands()
+    AXIS --> APP : status / error
+
+    TEL --> UI : telemetry (async)
+    AXIS --> UI : logs / status (async)
+
+    alt Operator presses Pause
+        Operator -> UI : pause
+        UI -> APP : pause()
+        APP -> RUN : setPaused()
+        APP -> AXIS : stopCommands()
+    end
+
+    alt Operator presses Resume
+        Operator -> UI : resume
+        UI -> APP : resume()
+        APP -> RUN : setRunning()
+    end
+
+    alt axis error
+        AXIS --> APP : error
+        APP -> RUN : setFailed()
+        break
+    end
+
+    alt Operator presses Abort
+        Operator -> UI : abort
+        UI -> APP : abort()
+        APP -> RUN : setAborted()
+        break
+    end
+
+end
+
+APP -> TEL : stopTelemetry()
+APP -> AXIS : disconnect()
+
+APP -> UI : show result
+
+@enduml

@@ -1,6 +1,6 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9" pages="7">
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9" pages="8">
   <diagram name="ДВИ" id="hKhG68l07HkepAyIeDOR">
-    <mxGraphModel dx="2045" dy="976" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2655" dy="1021" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -327,7 +327,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="c48JdyhRRo4vIrwvLhOU" name="ДВИ - Управление прогоном испытаний">
-    <mxGraphModel dx="1172" dy="2928" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1669" dy="1702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -458,6 +458,60 @@
         </mxCell>
         <mxCell id="csSg_UI5VHEEqKLwVrYq-14" edge="1" parent="1" source="csSg_UI5VHEEqKLwVrYq-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="mNdexT2dA8qmTijeYeTs-1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="CPtE8ESqgV24gFLgoDAz" name="ДВИ - мониторинг и визуализация">
+    <mxGraphModel dx="391" dy="2145" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="a4tvFiBuTUQD3jJDCTAO-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Оператор" vertex="1">
+          <mxGeometry height="60" width="30" x="570" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="sx9evPKpaAYs9a8nhGfZ-1" parent="1" style="shape=folder;fontStyle=1;tabWidth=130;tabHeight=20;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;" value="Система испытаний" vertex="1">
+          <mxGeometry height="420" width="520" x="680" y="-100" as="geometry" />
+        </mxCell>
+        <mxCell id="sx9evPKpaAYs9a8nhGfZ-2" parent="sx9evPKpaAYs9a8nhGfZ-1" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="294" relative="1" width="520.0000000000001" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OrlmVBl365yyv_lQ8Ob0-3" parent="sx9evPKpaAYs9a8nhGfZ-1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Просматривать графики управления" vertex="1">
+          <mxGeometry height="80" width="160" x="40" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="OrlmVBl365yyv_lQ8Ob0-10" parent="sx9evPKpaAYs9a8nhGfZ-1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Просматривать телеметрию" vertex="1">
+          <mxGeometry height="80" width="160" x="40" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="OrlmVBl365yyv_lQ8Ob0-21" parent="sx9evPKpaAYs9a8nhGfZ-1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Просматривать системные логи" vertex="1">
+          <mxGeometry height="80" width="160" x="40" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="OrlmVBl365yyv_lQ8Ob0-7" edge="1" parent="sx9evPKpaAYs9a8nhGfZ-1" source="OrlmVBl365yyv_lQ8Ob0-12" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" target="OrlmVBl365yyv_lQ8Ob0-3" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="820" y="545" as="sourcePoint" />
+            <mxPoint x="300" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OrlmVBl365yyv_lQ8Ob0-12" parent="sx9evPKpaAYs9a8nhGfZ-1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Настраивать отображение графиков" vertex="1">
+          <mxGeometry height="80" width="160" x="320" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="OrlmVBl365yyv_lQ8Ob0-2" edge="1" parent="1" source="a4tvFiBuTUQD3jJDCTAO-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="OrlmVBl365yyv_lQ8Ob0-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="615" y="660" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OrlmVBl365yyv_lQ8Ob0-11" edge="1" parent="1" source="a4tvFiBuTUQD3jJDCTAO-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;labelBackgroundColor=none;fontColor=default;" target="OrlmVBl365yyv_lQ8Ob0-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="687" as="sourcePoint" />
+            <mxPoint x="945" y="1513" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OrlmVBl365yyv_lQ8Ob0-22" edge="1" parent="1" source="a4tvFiBuTUQD3jJDCTAO-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="OrlmVBl365yyv_lQ8Ob0-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="585" y="671" as="sourcePoint" />
+            <mxPoint x="3811" y="2008" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

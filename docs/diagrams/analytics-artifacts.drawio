@@ -1,6 +1,6 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9" pages="5">
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9" pages="6">
   <diagram name="ДВИ" id="hKhG68l07HkepAyIeDOR">
-    <mxGraphModel dx="3005" dy="1046" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2045" dy="976" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -322,6 +322,55 @@
             <mxPoint x="-820" y="790" as="sourcePoint" />
             <mxPoint x="-840" y="710" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="c48JdyhRRo4vIrwvLhOU" name="ДВИ - Управление прогоном испытаний">
+    <mxGraphModel dx="1172" dy="2928" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="weJU3hPJEwrxofdK4KWs-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Оператор" vertex="1">
+          <mxGeometry height="60" width="30" x="80" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="weJU3hPJEwrxofdK4KWs-3" parent="1" style="shape=folder;fontStyle=1;tabWidth=130;tabHeight=20;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;" value="Система испытаний" vertex="1">
+          <mxGeometry height="660" width="200" x="230" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="weJU3hPJEwrxofdK4KWs-4" parent="weJU3hPJEwrxofdK4KWs-3" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="462" relative="1" width="200.00000000000003" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="weJU3hPJEwrxofdK4KWs-8" parent="weJU3hPJEwrxofdK4KWs-3" style="ellipse;whiteSpace=wrap;html=1;" value="Приостановить прогон" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="weJU3hPJEwrxofdK4KWs-9" parent="weJU3hPJEwrxofdK4KWs-3" style="ellipse;whiteSpace=wrap;html=1;" value="Запустить прогон испытаний" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="weJU3hPJEwrxofdK4KWs-7" parent="weJU3hPJEwrxofdK4KWs-3" style="ellipse;whiteSpace=wrap;html=1;" value="Возобновить прогон" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="weJU3hPJEwrxofdK4KWs-6" parent="weJU3hPJEwrxofdK4KWs-3" style="ellipse;whiteSpace=wrap;html=1;" value="Остановить прогон" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="weJU3hPJEwrxofdK4KWs-5" parent="weJU3hPJEwrxofdK4KWs-3" style="ellipse;whiteSpace=wrap;html=1;" value="Просматривать состояние прогона" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-NB5XvCv-xTxXg_nMbEa-3" edge="1" parent="1" source="weJU3hPJEwrxofdK4KWs-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="weJU3hPJEwrxofdK4KWs-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-NB5XvCv-xTxXg_nMbEa-4" edge="1" parent="1" source="weJU3hPJEwrxofdK4KWs-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="weJU3hPJEwrxofdK4KWs-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-NB5XvCv-xTxXg_nMbEa-5" edge="1" parent="1" source="weJU3hPJEwrxofdK4KWs-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="weJU3hPJEwrxofdK4KWs-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-NB5XvCv-xTxXg_nMbEa-6" edge="1" parent="1" source="weJU3hPJEwrxofdK4KWs-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="weJU3hPJEwrxofdK4KWs-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-NB5XvCv-xTxXg_nMbEa-7" edge="1" parent="1" source="weJU3hPJEwrxofdK4KWs-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="weJU3hPJEwrxofdK4KWs-9">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -1337,7 +1386,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="wHY-6hsTllhAPxhy-4q9" name="ДП - Запуск испытания">
-    <mxGraphModel dx="1183" dy="915" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />

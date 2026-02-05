@@ -1337,7 +1337,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="wHY-6hsTllhAPxhy-4q9" name="ДП - Запуск испытания">
-    <mxGraphModel dx="996" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1183" dy="915" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1640,6 +1640,9 @@
         </mxCell>
         <mxCell id="t7MX4CS2czQTxY27QP6G-55" parent="t7MX4CS2czQTxY27QP6G-38" style="html=1;whiteSpace=wrap;" value="&lt;u&gt;:Test Definition&lt;/u&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(Domain)&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="40" width="100" x="290" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="5Jy4zMSaRShW0I4dodfY-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="TODO: обновить после появления диаграммы классов" vertex="1">
+          <mxGeometry height="50" width="150" x="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,5 +1,5 @@
 @startuml
-title Class Diagram — Test System
+title Class Diagram — Test System (Clean Architecture + MVP)
 
 skinparam shadowing false
 skinparam roundcorner 12
@@ -31,8 +31,17 @@ package "Domain" {
     + validate(): void
   }
 
-  class Axis
+  class TestMetadata {
+    + createdAt
+    + operatorName
+    + testPurpose
+  }
 
+  class TestConfiguration {
+    + validate(): void
+  }
+
+  class Axis
   class TelemetryRecord {
     + timestamp
     + values
@@ -51,7 +60,7 @@ package "Domain" {
     Failed
   }
 
-  enum AxisState  {
+  enum AxisState {
     Disconnected
     Connected
     Operating
@@ -82,16 +91,19 @@ package "Domain" {
 
   TestRun --> TestProgram
   TestRun --> WindProfile
+  TestRun --> TestConfiguration
+  TestRun --> TestMetadata
   TestRun --> Axis
   TestRun --> TelemetryRecord
   TestRun --> TestReport
 
   TestProgram ..> TestProgramState
-  TestProgram ..> ProgramId
   TestRun ..> TestRunState
-  TestRun ..> RunId
   Axis ..> AxisState
+
+  TestRun ..> RunId
   Axis ..> AxisId
+  TestProgram ..> ProgramId
   TestReport ..> ReportId
 }
 
@@ -101,45 +113,55 @@ package "Domain" {
 package "Application" {
 
   class StartTestRunUseCase {
-    +execute(config)
+    + execute(config: TestConfiguration): void
   }
 
   class PauseTestRunUseCase {
-    +execute(runId)
+    + execute(runId: RunId): void
   }
 
   class ResumeTestRunUseCase {
-    +execute(runId)
+    + execute(runId: RunId): void
   }
 
   class StopTestRunUseCase {
-    +execute(runId)
+    + execute(runId: RunId): void
+  }
+
+  class LoadTestConfigurationUseCase {
+    + execute(): TestConfiguration
   }
 
   StartTestRunUseCase --> TestRun
   PauseTestRunUseCase --> TestRun
   ResumeTestRunUseCase --> TestRun
   StopTestRunUseCase --> TestRun
+
+  LoadTestConfigurationUseCase --> TestConfiguration
 }
 
 ' =====================
-' PORTS (INTERFACES)
+' PORTS
 ' =====================
 package "Ports" {
 
   interface AxisGateway {
-    +connect()
-    +sendCommand()
-    +disconnect()
+    + connect(): void
+    + sendCommand(): void
+    + disconnect(): void
   }
 
   interface TelemetryGateway {
-    +start()
-    +stop()
+    + start(): void
+    + stop(): void
   }
 
   interface ReportExporter {
-    +export(report)
+    + export(report: TestReport): void
+  }
+
+  interface TestConfigurationRepository {
+    + load(): TestConfiguration
   }
 }
 
@@ -153,10 +175,16 @@ package "Infrastructure" {
   class TelemetryStreamAdapter
   class PdfReportExporter
 
+  class TomlConfigRepository
+  class YamlConfigRepository
+
   TcpAxisAdapter ..|> AxisGateway
   VirtualAxisAdapter ..|> AxisGateway
   TelemetryStreamAdapter ..|> TelemetryGateway
   PdfReportExporter ..|> ReportExporter
+
+  TomlConfigRepository ..|> TestConfigurationRepository
+  YamlConfigRepository ..|> TestConfigurationRepository
 }
 
 ' =====================
@@ -165,16 +193,16 @@ package "Infrastructure" {
 package "Presentation" {
 
   interface MainView {
-    +showStatus()
-    +showError()
-    +updateTelemetry()
+    + showStatus(): void
+    + showError(): void
+    + updateTelemetry(): void
   }
 
   class MainPresenter {
-    +onStartPressed()
-    +onPausePressed()
-    +onResumePressed()
-    +onStopPressed()
+    + onStartPressed(): void
+    + onPausePressed(): void
+    + onResumePressed(): void
+    + onStopPressed(): void
   }
 
   MainPresenter --> MainView
@@ -182,6 +210,7 @@ package "Presentation" {
   MainPresenter --> PauseTestRunUseCase
   MainPresenter --> ResumeTestRunUseCase
   MainPresenter --> StopTestRunUseCase
+  MainPresenter --> LoadTestConfigurationUseCase
 }
 
-@endumla
+@enduml

@@ -1,0 +1,187 @@
+@startuml
+title Class Diagram — Test System
+
+skinparam shadowing false
+skinparam roundcorner 12
+skinparam classAttributeIconSize 0
+
+' =====================
+' DOMAIN LAYER
+' =====================
+package "Domain" {
+
+  class TestRun {
+    + start(): void
+    + pause(): void
+    + resume(): void
+    + abort(): void
+    + fail(): void
+    + complete(): void
+  }
+
+  class TestProgram {
+    + validate(): void
+  }
+
+  class WindProfile {
+    + formula: Formula
+    + beaufort: float
+    + direction: float
+    + angleOfAttack: float
+    + validate(): void
+  }
+
+  class Axis
+
+  class TelemetryRecord {
+    + timestamp
+    + values
+  }
+
+  class TestReport {
+    + generate(): void
+  }
+
+  enum TestRunState {
+    Idle
+    Running
+    Paused
+    Completed
+    Aborted
+    Failed
+  }
+
+  enum AxisState  {
+    Disconnected
+    Connected
+    Operating
+    Stopped
+    Error
+  }
+
+  enum TestProgramState {
+    Draft
+    Ready
+  }
+
+  class AxisId {
+    + id: uint8
+  }
+
+  class RunId {
+    + id: uint32
+  }
+
+  class ProgramId {
+    + id: uint32
+  }
+
+  class ReportId {
+    + id: uint64
+  }
+
+  TestRun --> TestProgram
+  TestRun --> WindProfile
+  TestRun --> Axis
+  TestRun --> TelemetryRecord
+  TestRun --> TestReport
+
+  TestProgram ..> TestProgramState
+  TestProgram ..> ProgramId
+  TestRun ..> TestRunState
+  TestRun ..> RunId
+  Axis ..> AxisState
+  Axis ..> AxisId
+  TestReport ..> ReportId
+}
+
+' =====================
+' APPLICATION LAYER
+' =====================
+package "Application" {
+
+  class StartTestRunUseCase {
+    +execute(config)
+  }
+
+  class PauseTestRunUseCase {
+    +execute(runId)
+  }
+
+  class ResumeTestRunUseCase {
+    +execute(runId)
+  }
+
+  class StopTestRunUseCase {
+    +execute(runId)
+  }
+
+  StartTestRunUseCase --> TestRun
+  PauseTestRunUseCase --> TestRun
+  ResumeTestRunUseCase --> TestRun
+  StopTestRunUseCase --> TestRun
+}
+
+' =====================
+' PORTS (INTERFACES)
+' =====================
+package "Ports" {
+
+  interface AxisGateway {
+    +connect()
+    +sendCommand()
+    +disconnect()
+  }
+
+  interface TelemetryGateway {
+    +start()
+    +stop()
+  }
+
+  interface ReportExporter {
+    +export(report)
+  }
+}
+
+' =====================
+' INFRASTRUCTURE
+' =====================
+package "Infrastructure" {
+
+  class TcpAxisAdapter
+  class VirtualAxisAdapter
+  class TelemetryStreamAdapter
+  class PdfReportExporter
+
+  TcpAxisAdapter ..|> AxisGateway
+  VirtualAxisAdapter ..|> AxisGateway
+  TelemetryStreamAdapter ..|> TelemetryGateway
+  PdfReportExporter ..|> ReportExporter
+}
+
+' =====================
+' PRESENTATION (MVP)
+' =====================
+package "Presentation" {
+
+  interface MainView {
+    +showStatus()
+    +showError()
+    +updateTelemetry()
+  }
+
+  class MainPresenter {
+    +onStartPressed()
+    +onPausePressed()
+    +onResumePressed()
+    +onStopPressed()
+  }
+
+  MainPresenter --> MainView
+  MainPresenter --> StartTestRunUseCase
+  MainPresenter --> PauseTestRunUseCase
+  MainPresenter --> ResumeTestRunUseCase
+  MainPresenter --> StopTestRunUseCase
+}
+
+@endumla

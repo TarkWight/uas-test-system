@@ -176,7 +176,6 @@ package "Infrastructure" {
   class PdfReportExporter
 
   class TomlConfigRepository
-  class YamlConfigRepository
 
   TcpAxisAdapter ..|> AxisGateway
   VirtualAxisAdapter ..|> AxisGateway
@@ -184,7 +183,6 @@ package "Infrastructure" {
   PdfReportExporter ..|> ReportExporter
 
   TomlConfigRepository ..|> TestConfigurationRepository
-  YamlConfigRepository ..|> TestConfigurationRepository
 }
 
 ' =====================

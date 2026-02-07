@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9" pages="9">
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9" pages="10">
   <diagram name="ДВИ" id="hKhG68l07HkepAyIeDOR">
     <mxGraphModel dx="2655" dy="1021" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -517,7 +517,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="d0T5tdOai_pGtNJ57egU" name="ДВИ - автоматические функции системы">
-    <mxGraphModel dx="720" dy="1464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1892" dy="1464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -556,7 +556,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="cY76w8xGQ3sIPI9h5utf" name="МПО">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="-4" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1873,6 +1873,14 @@
         <mxCell id="5Jy4zMSaRShW0I4dodfY-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="TODO: обновить после появления диаграммы классов" vertex="1">
           <mxGeometry height="50" width="150" x="40" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="kN6bL09-AVYyka3sc-aA" name="ДК">
+    <mxGraphModel dx="1720" dy="1331" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>

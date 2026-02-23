@@ -1,0 +1,86 @@
+@startuml
+title Statechart — Legacy External Behavior (Black Box)
+
+skinparam shadowing false
+skinparam roundcorner 12
+
+[*] --> Loaded : app start\nload config (axis addresses)
+
+state Loaded {
+  [*] --> Idle
+
+  ' ====== REGION 1: Run lifecycle ======
+  state "Run" as RunRegion {
+    [*] --> Waiting
+
+    Waiting --> Running : start (operator)\nvalidate wind formula + formula config\nsnapshot settings
+    Running --> Waiting : stop (operator)\nend run\nunlock UI
+
+    note right of Running
+      N1: графики рисуются
+      N2: логируется телеметрия (если оси доступны)
+      Изменения настроек в UI\nне влияют на текущий прогон
+    end note
+  }
+
+  ' ====== REGION 2: Connectivity (axes/network) ======
+  state "Connectivity" as ConnRegion {
+    [*] --> Unknown
+
+    Unknown --> AxesOk : axes reachable (ping/connect ok)
+    Unknown --> AxesUnavailable : no network / no response
+
+    AxesOk --> AxesLost : connection lost during run
+    AxesLost --> AxesOk : reconnect successful
+
+    AxesUnavailable --> AxesOk : network restored / axes reachable
+  }
+
+  ' ====== REGION 3: Configuration readiness (A–F) ======
+  state "Configuration" as CfgRegion {
+    [*] --> A_None
+
+    A_None --> B_AxisOnly : assign axes to graphs (2 axes)
+    A_None --> C_WindFunctionOnly : set wind function (valid)
+    A_None --> D_FormulaConfigOnly : set formula config (AoA/Beaufort/Dir)
+
+    B_AxisOnly --> E_FunctionAndConfig : set wind function OR formula config
+    C_WindFunctionOnly --> E_FunctionAndConfig : set formula config
+    D_FormulaConfigOnly --> E_FunctionAndConfig : set wind function
+
+    A_None --> F_Template : choose template
+    B_AxisOnly --> F_Template : choose template
+    C_WindFunctionOnly --> F_Template : choose template
+    D_FormulaConfigOnly --> F_Template : choose template
+    E_FunctionAndConfig --> F_Template : choose template
+
+    F_Template --> E_FunctionAndConfig : tweak template params / change parts
+
+    note right of A_None
+      A: ничего не настроено
+      B: только оси (2 шт) привязаны к графикам
+      C: только функция ветра
+      D: только конфиг формулы (AoA/Бофорт/направление)
+      E: функция + конфиг
+      F: шаблон (готовая функция + конфиг)
+    end note
+  }
+
+  ' ====== Cross-region rules as notes ======
+  note right of Idle
+    Перед стартом:
+    - проверка/валидация формулы и конфигурации
+    - если формула невалидна -> E3:
+      новая формула не фиксируется,
+      используется последняя успешная
+  end note
+
+  note right of ConnRegion
+    E1/E2 поведение:
+    - прогон продолжается
+    - графики продолжают рисоваться
+    - в логах ошибки подключения к осям
+  end note
+}
+
+@enduml

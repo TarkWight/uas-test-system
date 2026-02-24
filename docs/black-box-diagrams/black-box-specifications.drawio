@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9" pages="2">
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9" pages="3">
   <diagram name="System Context" id="fLLAbbNjP7ePiJ818QTY">
     <mxGraphModel dx="823" dy="666" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -515,6 +515,108 @@
         </mxCell>
         <mxCell id="M45IX8nwCboh2l3V06yy-96" parent="1" style="shape=note;backgroundOutline=1;darkOpacity=0.05;align=left;html=1;" value="Система загружается. В Моменте она подтягивает из конфига к каким адресам цепляться.&amp;nbsp;&lt;br&gt;&lt;br&gt;A. Я могу не настраивать ничего&lt;br&gt;B. Я могу настроить только привод на конкретный график (цветную полоску графа) (надо два)&lt;br&gt;C. Я могу настроить только функцию ветра&lt;br&gt;D. Я могу настроить только конфигурацию формулы (угол атаки, баллы по бофорту)&lt;br&gt;E. Я могу настроить и функцию ветра, и конфигурацию формулы&lt;br&gt;F. Я могу заюзать конкретный шаблон (готовая функция ветра, конфигурация формулы)&lt;br&gt;&lt;br&gt;При старте прогона система начинает рисовать графики.&lt;br&gt;&lt;br&gt;При A - система начинает рисовать графики (идет прогон), но в логах я буду получать сообщения об ошибках подключения к осям.&lt;br&gt;При B - система начинает рисовать графики, в логах телеметрия с осей. Используется конфигурация по умолчанию.&lt;br&gt;При C - система начинает рисовать графики, в логах телеметрия с осей. Используется конфигурация по умолчанию + функция ветра.&lt;br&gt;При D - система начинает рисовать графики, в логах телеметрия с осей. Используется функция по умолчанию + конфигурация формулы.&lt;br&gt;При E - система начинает рисовать графики, в логах телеметрия с осей. Используется функция + конфигурация&lt;br&gt;При F - система начинает рисовать графики, в логах телеметрия с осей. Используется конкретный шаблон.&lt;br&gt;&lt;br&gt;Могут так же быть:&lt;br&gt;E1 - отсутствует сеть&lt;br&gt;E2 - пропало соединение с осями&lt;br&gt;E3 - ошибка в функции ветра&lt;br&gt;&lt;br&gt;И нормальное поведение&lt;br&gt;N1 - графики рисуются&lt;br&gt;N2 - идёт логирование телеметрии с осей&lt;br&gt;&lt;br&gt;При E1 и E2 система продолжает рисовать графики, но в логах я буду получать сообщения об ошибках подключения к осям.&lt;br&gt;При E3 система просто не фиксирует функцию ветра (используется последняя успешная настройка)&lt;br&gt;&lt;br&gt;Если в функции ветра есть значения ниже 0, то они обрезаются до 0.&amp;nbsp;&lt;br&gt;Проверка функции ветра и конфигурации формулы происходит перед запуском прогона. В процессе прогона изменени конфигов не отражаются на текущем прогоне.&lt;br&gt;При старте &quot;на холодную&quot; система берёт &quot;нулевые параметры&quot;. Для прогона с конфигами надо устанавливать эти конфиги." vertex="1">
           <mxGeometry height="490" width="970" x="-1610" y="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="tZ6nrlTurE5vz3aWstnb" name="Statechart -- Wind Formula Acceptance">
+    <mxGraphModel dx="757" dy="613" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-7" edge="1" parent="1" source="VrCEdT6aQsMrJETUT6_e-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VrCEdT6aQsMrJETUT6_e-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="145" y="250" />
+              <mxPoint x="145" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-8" connectable="0" parent="VrCEdT6aQsMrJETUT6_e-7" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];html=1;" value=" set function (valid)" vertex="1">
+          <mxGeometry relative="1" x="-0.0667" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-9" edge="1" parent="1" source="VrCEdT6aQsMrJETUT6_e-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;" target="VrCEdT6aQsMrJETUT6_e-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="455" y="200" />
+              <mxPoint x="455" y="140" />
+              <mxPoint x="235" y="140" />
+            </Array>
+            <mxPoint x="265" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-10" connectable="0" parent="VrCEdT6aQsMrJETUT6_e-9" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];html=1;" value="et function (invalid)&lt;br&gt;E3: reject, keep last successful&lt;br&gt;(if none -&amp;gt; default)" vertex="1">
+          <mxGeometry relative="1" x="-0.4727" y="3" as="geometry">
+            <mxPoint x="-13" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-2" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;NoFormula&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="140" x="110" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-14" edge="1" parent="1" source="VrCEdT6aQsMrJETUT6_e-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VrCEdT6aQsMrJETUT6_e-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="125" y="430" />
+              <mxPoint x="195" y="430" />
+            </Array>
+            <mxPoint x="295" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-15" connectable="0" parent="VrCEdT6aQsMrJETUT6_e-14" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];html=1;" value="set function (invalid)&lt;br&gt;E3: reject, keep last successful" vertex="1">
+          <mxGeometry relative="1" x="-0.4395" y="-3" as="geometry">
+            <mxPoint x="23" y="31" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-16" edge="1" parent="1" source="VrCEdT6aQsMrJETUT6_e-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VrCEdT6aQsMrJETUT6_e-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="440" />
+              <mxPoint x="365" y="440" />
+              <mxPoint x="365" y="340" />
+            </Array>
+            <mxPoint x="185" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-17" connectable="0" parent="VrCEdT6aQsMrJETUT6_e-16" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];html=1;" value="build profile&lt;div&gt;clamp values &amp;lt; 0 to 0&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.3349" y="-1" as="geometry">
+            <mxPoint x="4" y="84" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-3" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;ValidFormula&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="140" x="110" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-6" edge="1" parent="1" source="VrCEdT6aQsMrJETUT6_e-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VrCEdT6aQsMrJETUT6_e-2" value="cold start (defaults/zero)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-5" parent="1" style="ellipse;fillColor=strokeColor;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="165" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-11" edge="1" parent="1" source="VrCEdT6aQsMrJETUT6_e-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;" target="VrCEdT6aQsMrJETUT6_e-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="225" y="300" />
+              <mxPoint x="475" y="300" />
+              <mxPoint x="475" y="330" />
+            </Array>
+            <mxPoint x="250" y="280" as="sourcePoint" />
+            <mxPoint x="250" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-12" connectable="0" parent="VrCEdT6aQsMrJETUT6_e-11" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];html=1;" value="set function (valid)&lt;br&gt;accept new" vertex="1">
+          <mxGeometry relative="1" x="-0.6369" y="2" as="geometry">
+            <mxPoint x="55" y="-19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-19" edge="1" parent="1" source="VrCEdT6aQsMrJETUT6_e-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=none;endFill=0;" target="VrCEdT6aQsMrJETUT6_e-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-18" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=14;" value="&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;&amp;nbsp; Значения ниже 0 обрезаются до 0&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="210" x="205" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="VrCEdT6aQsMrJETUT6_e-20" edge="1" parent="1" source="VrCEdT6aQsMrJETUT6_e-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="VrCEdT6aQsMrJETUT6_e-18">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

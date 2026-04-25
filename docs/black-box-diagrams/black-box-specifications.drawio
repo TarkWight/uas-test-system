@@ -121,7 +121,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ecE3EmpL1Jt4BeZxKs1J" name="Statechart -- Legacy External Behavior">
-    <mxGraphModel dx="2400" dy="574" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2723" dy="1747" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -145,7 +145,7 @@
           <mxGeometry height="40" width="140" x="-550" y="1110" as="geometry" />
         </mxCell>
         <mxCell id="M45IX8nwCboh2l3V06yy-13" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;" value="Run" vertex="1">
-          <mxGeometry height="420" width="550" x="-590" y="480" as="geometry" />
+          <mxGeometry height="333" width="550" x="-590" y="480" as="geometry" />
         </mxCell>
         <mxCell id="M45IX8nwCboh2l3V06yy-14" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;rounded=1;absoluteArcSize=1;arcSize=50;fontColor=default;html=1;" value="Connectivity" vertex="1">
           <mxGeometry height="400" width="430" x="-1610" y="540" as="geometry" />
@@ -182,12 +182,6 @@
         </mxCell>
         <mxCell id="M45IX8nwCboh2l3V06yy-21" parent="1" style="ellipse;fillColor=strokeColor;html=1;" value="" vertex="1">
           <mxGeometry height="40" width="40" x="-335" y="520" as="geometry" />
-        </mxCell>
-        <mxCell id="M45IX8nwCboh2l3V06yy-27" edge="1" parent="1" source="M45IX8nwCboh2l3V06yy-26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;align=left;endArrow=none;endFill=0;dashed=1;" target="M45IX8nwCboh2l3V06yy-16">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="M45IX8nwCboh2l3V06yy-26" parent="1" style="shape=note;backgroundOutline=1;darkOpacity=0.05;html=1;align=left;" value="Графики рисуются&lt;br&gt;Логируется телеметрия (если оси доступны)&lt;br&gt;      Изменения настроек в UI не влияют на текущий прогон" vertex="1">
-          <mxGeometry height="60" width="320" x="-475" y="830" as="geometry" />
         </mxCell>
         <mxCell id="M45IX8nwCboh2l3V06yy-29" edge="1" parent="1" source="M45IX8nwCboh2l3V06yy-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="M45IX8nwCboh2l3V06yy-32">
           <mxGeometry relative="1" as="geometry">
@@ -447,6 +441,161 @@
         </mxCell>
         <mxCell id="M45IX8nwCboh2l3V06yy-96" parent="1" style="shape=note;backgroundOutline=1;darkOpacity=0.05;align=left;html=1;" value="Система загружается. Сразу после запуска она подтягивает из файла конфигурации адреса для обращения к приводам.&amp;nbsp;&lt;br&gt;&lt;br&gt;A. (&lt;b&gt;None&lt;/b&gt;) Оператор не настраивает ничего&lt;br&gt;B. (&lt;span style=&quot;text-align: center; text-wrap-mode: wrap;&quot;&gt;&lt;b&gt;Axis&lt;/b&gt;)&amp;nbsp;&lt;/span&gt;Оператор может настроить только привод на конкретный график (цветную полоску графа) (нужно настроить оба привода)&lt;br&gt;C. (&lt;span style=&quot;text-align: center; text-wrap-mode: wrap;&quot;&gt;&lt;b&gt;WindFunction&lt;/b&gt;)&amp;nbsp;&lt;/span&gt;Оператор может&amp;nbsp;настроить только функцию ветра&lt;br&gt;D. (&lt;span style=&quot;text-align: center; text-wrap-mode: wrap;&quot;&gt;&lt;b&gt;FormulaConfig&lt;/b&gt;)&amp;nbsp;&lt;/span&gt;Оператор может&amp;nbsp;настроить только конфигурацию формулы (угол атаки, баллы по Бофорту)&lt;br&gt;E. (&lt;span style=&quot;text-align: center; text-wrap-mode: wrap;&quot;&gt;&lt;b&gt;FunctionAndConfig&lt;/b&gt;)&amp;nbsp;&lt;/span&gt;Оператор может настроить и функцию ветра, и конфигурацию формулы&lt;br&gt;F. (&lt;span style=&quot;text-align: center; text-wrap-mode: wrap;&quot;&gt;&lt;b&gt;Template&lt;/b&gt;)&amp;nbsp;&lt;/span&gt;Оператор может&amp;nbsp;воспользоваться конкретным шаблоном (готовая функция ветра, конфигурация формулы)&lt;br&gt;&lt;br&gt;При старте прогона система начинает рисовать графики.&lt;br&gt;&lt;br&gt;При A - система начинает рисовать графики (идет прогон), но в логах я буду получать сообщения об ошибках подключения к осям.&lt;br&gt;При B - система начинает рисовать графики, в логах телеметрия с осей. Используется конфигурация по умолчанию.&lt;br&gt;При C - система начинает рисовать графики, в логах телеметрия с осей. Используется конфигурация по умолчанию + функция ветра.&lt;br&gt;При D - система начинает рисовать графики, в логах телеметрия с осей. Используется функция по умолчанию + конфигурация формулы.&lt;br&gt;При E - система начинает рисовать графики, в логах телеметрия с осей. Используется функция + конфигурация&lt;br&gt;При F - система начинает рисовать графики, в логах телеметрия с осей. Используется конкретный шаблон.&lt;br&gt;&lt;br&gt;Могут так же быть следующие ошибки:&lt;br&gt;Er1 - отсутствует сеть&lt;br&gt;Er2 - пропало соединение с осями&lt;br&gt;Er3 - ошибка в функции ветра&lt;br&gt;&lt;br&gt;И нормальное поведение&lt;br&gt;N1 - графики рисуются&lt;br&gt;N2 - идёт логирование телеметрии с осей&lt;br&gt;&lt;br&gt;При Er1 и Er2 система продолжает рисовать графики, но в логах оператор будет получать сообщения об ошибках подключения к осям.&lt;br&gt;При E3 система просто не фиксирует функцию ветра (используется последняя успешная настройка)&lt;br&gt;&lt;br&gt;Если в функции ветра есть значения ниже 0, то они обрезаются до 0.&amp;nbsp;&lt;br&gt;Проверка функции ветра и конфигурации формулы происходит перед запуском прогона. В процессе прогона изменени конфигов не отражаются на текущем прогоне.&lt;br&gt;При старте &quot;на холодную&quot; система берёт &quot;нулевые параметры&quot;. Для прогона с конфигами надо устанавливать эти конфиги." vertex="1">
           <mxGeometry height="490" width="970" x="-1614" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hq6BwTkVj39_qWa5lprl-1" edge="1" parent="1" source="hq6BwTkVj39_qWa5lprl-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;align=left;endArrow=none;endFill=0;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-79" y="954" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hq6BwTkVj39_qWa5lprl-2" parent="1" style="shape=note;backgroundOutline=1;darkOpacity=0.05;html=1;align=left;" value="Графики рисуются&lt;br&gt;Логируется телеметрия (если оси доступны)&lt;br&gt;      Изменения настроек в UI не влияют на текущий прогон" vertex="1">
+          <mxGeometry height="60" width="320" x="-239" y="984" as="geometry" />
+        </mxCell>
+        <mxCell id="hq6BwTkVj39_qWa5lprl-3" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;" value="Run" vertex="1">
+          <mxGeometry height="333" width="550" x="68" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="hq6BwTkVj39_qWa5lprl-8" edge="1" parent="1" source="hq6BwTkVj39_qWa5lprl-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="hq6BwTkVj39_qWa5lprl-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hq6BwTkVj39_qWa5lprl-4" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Запуск системы" vertex="1">
+          <mxGeometry height="40" width="120" x="184" y="486" as="geometry" />
+        </mxCell>
+        <mxCell id="hq6BwTkVj39_qWa5lprl-6" edge="1" parent="1" source="hq6BwTkVj39_qWa5lprl-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="hq6BwTkVj39_qWa5lprl-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hq6BwTkVj39_qWa5lprl-5" parent="1" style="ellipse;fillColor=strokeColor;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="224" y="406" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--2" edge="1" parent="1" source="hq6BwTkVj39_qWa5lprl-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="sTNmxECDFB59dgHFsJY--1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hq6BwTkVj39_qWa5lprl-7" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Начало логирования данных" vertex="1">
+          <mxGeometry height="40" width="120" x="184" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--15" edge="1" parent="1" source="sTNmxECDFB59dgHFsJY--1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="sTNmxECDFB59dgHFsJY--3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--27" connectable="0" parent="sTNmxECDFB59dgHFsJY--15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[оси подключены]" vertex="1">
+          <mxGeometry relative="1" x="-0.7388" as="geometry">
+            <mxPoint x="33" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--20" edge="1" parent="1" source="sTNmxECDFB59dgHFsJY--1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="sTNmxECDFB59dgHFsJY--4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--28" connectable="0" parent="sTNmxECDFB59dgHFsJY--20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[иначе]" vertex="1">
+          <mxGeometry relative="1" x="-0.4753" y="-2" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--1" parent="1" style="rhombus;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="219" y="646" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--16" edge="1" parent="1" source="sTNmxECDFB59dgHFsJY--3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="sTNmxECDFB59dgHFsJY--5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="366" y="890.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--3" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Привязка каналов к осям графика" vertex="1">
+          <mxGeometry height="40" width="120" x="324" y="726" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--19" edge="1" parent="1" source="sTNmxECDFB59dgHFsJY--4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="sTNmxECDFB59dgHFsJY--6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--4" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Данные поступают в логи" vertex="1">
+          <mxGeometry height="40" width="120" x="44" y="726" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--17" edge="1" parent="1" source="sTNmxECDFB59dgHFsJY--5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="sTNmxECDFB59dgHFsJY--7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="885" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--5" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Начало построения графиков" vertex="1">
+          <mxGeometry height="40" width="120" x="324" y="806" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--18" edge="1" parent="1" source="sTNmxECDFB59dgHFsJY--6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="sTNmxECDFB59dgHFsJY--7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="885" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--6" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Данные поступают в логи" vertex="1">
+          <mxGeometry height="40" width="120" x="44" y="806" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--21" edge="1" parent="1" source="sTNmxECDFB59dgHFsJY--7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="sTNmxECDFB59dgHFsJY--8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="244" y="920" />
+              <mxPoint x="484" y="920" />
+              <mxPoint x="484" y="426" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--7" parent="1" style="rhombus;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="219" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--22" edge="1" parent="1" source="sTNmxECDFB59dgHFsJY--8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="sTNmxECDFB59dgHFsJY--9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--8" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Поступление телеметрии (непрерывно)" vertex="1">
+          <mxGeometry height="40" width="180" x="524" y="406" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--23" edge="1" parent="1" source="sTNmxECDFB59dgHFsJY--9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="sTNmxECDFB59dgHFsJY--10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--31" connectable="0" parent="sTNmxECDFB59dgHFsJY--23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[запуск прогона]" vertex="1">
+          <mxGeometry relative="1" x="-0.7848" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--29" edge="1" parent="1" source="sTNmxECDFB59dgHFsJY--9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="sTNmxECDFB59dgHFsJY--12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="764" y="515" />
+              <mxPoint x="764" y="751" />
+            </Array>
+            <mxPoint x="774" y="766.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--30" connectable="0" parent="sTNmxECDFB59dgHFsJY--29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[иначе]" vertex="1">
+          <mxGeometry relative="1" x="-0.8503" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--9" parent="1" style="rhombus;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="589" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--24" edge="1" parent="1" source="sTNmxECDFB59dgHFsJY--10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="sTNmxECDFB59dgHFsJY--11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--10" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Изменение управляющих воздействий" vertex="1">
+          <mxGeometry height="40" width="160" x="534" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--25" edge="1" parent="1" source="sTNmxECDFB59dgHFsJY--11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="sTNmxECDFB59dgHFsJY--12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--11" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Изменение характера телеметрии" vertex="1">
+          <mxGeometry height="40" width="160" x="534" y="646" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--26" edge="1" parent="1" source="sTNmxECDFB59dgHFsJY--12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="sTNmxECDFB59dgHFsJY--32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--12" parent="1" style="rhombus;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="589" y="726" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--13" parent="1" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="594" y="886" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--14" edge="1" parent="1" source="hq6BwTkVj39_qWa5lprl-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="hq6BwTkVj39_qWa5lprl-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--33" edge="1" parent="1" source="sTNmxECDFB59dgHFsJY--32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="sTNmxECDFB59dgHFsJY--13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sTNmxECDFB59dgHFsJY--32" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Телеметрия продолжается независимо от прогона" vertex="1">
+          <mxGeometry height="40" width="160" x="534" y="806" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

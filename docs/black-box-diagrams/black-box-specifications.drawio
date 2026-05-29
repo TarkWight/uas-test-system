@@ -1,10 +1,10 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5" pages="5">
   <diagram name="System Context" id="fLLAbbNjP7ePiJ818QTY">
-    <mxGraphModel dx="746" dy="574" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="532" dy="468" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="14ufPdENfqIpYoA-KupI-15" edge="1" parent="1" source="14ufPdENfqIpYoA-KupI-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="14ufPdENfqIpYoA-KupI-21">
+        <mxCell id="14ufPdENfqIpYoA-KupI-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" parent="1" source="14ufPdENfqIpYoA-KupI-16" target="14ufPdENfqIpYoA-KupI-21" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="112" y="611" />
@@ -13,15 +13,15 @@
             <mxPoint x="92" y="611.0204081632653" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-29" connectable="0" parent="14ufPdENfqIpYoA-KupI-15" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];imageAspect=1;absoluteArcSize=0;noLabel=0;portConstraintRotation=0;allowArrows=1;convertToSvg=0;labelBackgroundColor=none;html=1;" value="запуск / пауза / остановка / настройка" vertex="1">
-          <mxGeometry relative="1" x="-0.1043" y="1" as="geometry">
-            <mxPoint x="13" y="-27" as="offset" />
+        <mxCell id="14ufPdENfqIpYoA-KupI-29" value="запуск / пауза&lt;div&gt;остановка / настройка&lt;/div&gt;" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];imageAspect=1;absoluteArcSize=0;noLabel=0;portConstraintRotation=0;allowArrows=1;convertToSvg=0;labelBackgroundColor=none;html=1;" parent="14ufPdENfqIpYoA-KupI-15" connectable="0" vertex="1">
+          <mxGeometry x="-0.1043" y="1" relative="1" as="geometry">
+            <mxPoint x="12" y="-20" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-16" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Оператоор" vertex="1">
-          <mxGeometry height="60" width="30" x="38" y="586" as="geometry" />
+        <mxCell id="14ufPdENfqIpYoA-KupI-16" value="Оператоор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="38" y="586" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-17" edge="1" parent="1" source="14ufPdENfqIpYoA-KupI-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="14ufPdENfqIpYoA-KupI-16">
+        <mxCell id="14ufPdENfqIpYoA-KupI-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" parent="1" source="14ufPdENfqIpYoA-KupI-21" target="14ufPdENfqIpYoA-KupI-16" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="112" y="641" />
@@ -30,24 +30,25 @@
             <mxPoint x="92" y="631.0204081632653" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-30" connectable="0" parent="14ufPdENfqIpYoA-KupI-17" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];html=1;labelBackgroundColor=none;" value="состояние / графики / ошибки" vertex="1">
-          <mxGeometry relative="1" x="0.0838" as="geometry">
+        <mxCell id="14ufPdENfqIpYoA-KupI-30" value="состояние / графики / ошибки" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];html=1;labelBackgroundColor=none;" parent="14ufPdENfqIpYoA-KupI-17" connectable="0" vertex="1">
+          <mxGeometry x="0.0838" relative="1" as="geometry">
             <mxPoint x="14" y="13" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-18" edge="1" parent="1" source="14ufPdENfqIpYoA-KupI-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="14ufPdENfqIpYoA-KupI-22">
+        <mxCell id="14ufPdENfqIpYoA-KupI-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" parent="1" source="14ufPdENfqIpYoA-KupI-21" target="14ufPdENfqIpYoA-KupI-22" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="352" y="621" />
+              <mxPoint x="345" y="559" />
+              <mxPoint x="345" y="559" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-35" connectable="0" parent="14ufPdENfqIpYoA-KupI-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="создать отчет" vertex="1">
-          <mxGeometry relative="1" x="-0.0667" y="1" as="geometry">
+        <mxCell id="14ufPdENfqIpYoA-KupI-35" value="создать отчет" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="14ufPdENfqIpYoA-KupI-18" connectable="0" vertex="1">
+          <mxGeometry x="-0.0667" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-19" edge="1" parent="1" source="14ufPdENfqIpYoA-KupI-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="14ufPdENfqIpYoA-KupI-24">
+        <mxCell id="14ufPdENfqIpYoA-KupI-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" parent="1" source="14ufPdENfqIpYoA-KupI-21" target="14ufPdENfqIpYoA-KupI-24" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="272" y="701" />
@@ -55,18 +56,18 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-32" connectable="0" parent="14ufPdENfqIpYoA-KupI-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="команды управления" vertex="1">
-          <mxGeometry relative="1" x="-0.1589" as="geometry">
-            <mxPoint x="2" y="-10" as="offset" />
+        <mxCell id="14ufPdENfqIpYoA-KupI-32" value="команды управления&lt;div&gt;параметры нагрузки&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="14ufPdENfqIpYoA-KupI-19" connectable="0" vertex="1">
+          <mxGeometry x="-0.1589" relative="1" as="geometry">
+            <mxPoint x="-3" y="4" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-21" parent="1" style="html=1;whiteSpace=wrap;" value="Система управления испытательным стендом" vertex="1">
-          <mxGeometry height="56" width="120" x="250" y="590" as="geometry" />
+        <mxCell id="14ufPdENfqIpYoA-KupI-21" value="Система управления испытательным стендом" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="250" y="590" width="120" height="56" as="geometry" />
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-22" parent="1" style="html=1;whiteSpace=wrap;" value="Отчет в формате PDF" vertex="1">
-          <mxGeometry height="50" width="110" x="492" y="596" as="geometry" />
+        <mxCell id="14ufPdENfqIpYoA-KupI-22" value="Отчет в формате PDF" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="316" y="461" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-23" edge="1" parent="1" source="14ufPdENfqIpYoA-KupI-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="14ufPdENfqIpYoA-KupI-21">
+        <mxCell id="14ufPdENfqIpYoA-KupI-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" parent="1" source="14ufPdENfqIpYoA-KupI-24" target="14ufPdENfqIpYoA-KupI-21" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="342" y="701" />
@@ -74,34 +75,18 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-34" connectable="0" parent="14ufPdENfqIpYoA-KupI-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="данные" vertex="1">
-          <mxGeometry relative="1" x="0.1519" y="1" as="geometry">
-            <mxPoint x="8" y="9" as="offset" />
+        <mxCell id="14ufPdENfqIpYoA-KupI-34" value="данные измерений" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="14ufPdENfqIpYoA-KupI-23" connectable="0" vertex="1">
+          <mxGeometry x="0.1519" y="1" relative="1" as="geometry">
+            <mxPoint x="4" y="28" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-24" parent="1" style="html=1;whiteSpace=wrap;" value="Приводы Axis" vertex="1">
-          <mxGeometry height="50" width="110" x="255" y="741" as="geometry" />
+        <mxCell id="14ufPdENfqIpYoA-KupI-24" value="Приводы стенда" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="255" y="741" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-38" edge="1" parent="1" source="14ufPdENfqIpYoA-KupI-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="14ufPdENfqIpYoA-KupI-21">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="342" y="571" />
-              <mxPoint x="342" y="571" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="14ufPdENfqIpYoA-KupI-26" value="Системный контекст — система управления испытательным стендом" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;" parent="1" vertex="1">
+          <mxGeometry x="20" y="360" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-42" connectable="0" parent="14ufPdENfqIpYoA-KupI-38" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="данные измерений" vertex="1">
-          <mxGeometry relative="1" x="-0.0465" y="2" as="geometry">
-            <mxPoint y="9" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-25" parent="1" style="html=1;whiteSpace=wrap;" value="Телеметрические датчики" vertex="1">
-          <mxGeometry height="50" width="110" x="326" y="461" as="geometry" />
-        </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-26" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;" value="Системный контекст — система управления испытательным стендом" vertex="1">
-          <mxGeometry height="60" width="170" x="20" y="360" as="geometry" />
-        </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-41" edge="1" parent="1" source="14ufPdENfqIpYoA-KupI-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="14ufPdENfqIpYoA-KupI-21">
+        <mxCell id="14ufPdENfqIpYoA-KupI-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" parent="1" source="14ufPdENfqIpYoA-KupI-31" target="14ufPdENfqIpYoA-KupI-21" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="282" y="531" />
@@ -109,13 +94,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-43" connectable="0" parent="14ufPdENfqIpYoA-KupI-41" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="параметры нагрузки" vertex="1">
-          <mxGeometry relative="1" x="-0.1284" y="-1" as="geometry">
-            <mxPoint y="-7" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-31" parent="1" style="html=1;whiteSpace=wrap;" value="Файл конфигурации" vertex="1">
-          <mxGeometry height="50" width="110" x="192" y="461" as="geometry" />
+        <mxCell id="14ufPdENfqIpYoA-KupI-31" value="Файл конфигурации" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="192" y="461" width="110" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -1473,7 +1453,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="wo53hAHYSZZUOlRfx1so" name="UCD">
-    <mxGraphModel dx="5500" dy="2773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="671" dy="-610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />

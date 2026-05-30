@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5" pages="5">
   <diagram name="System Context" id="fLLAbbNjP7ePiJ818QTY">
-    <mxGraphModel dx="1052" dy="822" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="650" dy="478" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -32,7 +32,7 @@
         </mxCell>
         <mxCell id="14ufPdENfqIpYoA-KupI-30" value="состояние / графики / ошибки" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];html=1;labelBackgroundColor=none;" parent="14ufPdENfqIpYoA-KupI-17" connectable="0" vertex="1">
           <mxGeometry x="0.0838" relative="1" as="geometry">
-            <mxPoint x="14" y="13" as="offset" />
+            <mxPoint x="14" y="7" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="14ufPdENfqIpYoA-KupI-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" parent="1" source="14ufPdENfqIpYoA-KupI-21" target="14ufPdENfqIpYoA-KupI-22" edge="1">
@@ -51,14 +51,14 @@
         <mxCell id="14ufPdENfqIpYoA-KupI-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" parent="1" source="14ufPdENfqIpYoA-KupI-21" target="14ufPdENfqIpYoA-KupI-24" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="272" y="701" />
-              <mxPoint x="272" y="701" />
+              <mxPoint x="457" y="600" />
+              <mxPoint x="457" y="600" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="14ufPdENfqIpYoA-KupI-32" value="команды управления&lt;div&gt;параметры нагрузки&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="14ufPdENfqIpYoA-KupI-19" connectable="0" vertex="1">
           <mxGeometry x="-0.1589" relative="1" as="geometry">
-            <mxPoint x="-3" y="4" as="offset" />
+            <mxPoint x="6" y="-15" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="14ufPdENfqIpYoA-KupI-21" value="Система управления испытательным стендом" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
@@ -70,18 +70,18 @@
         <mxCell id="14ufPdENfqIpYoA-KupI-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" parent="1" source="14ufPdENfqIpYoA-KupI-24" target="14ufPdENfqIpYoA-KupI-21" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="342" y="701" />
-              <mxPoint x="342" y="701" />
+              <mxPoint x="379" y="632" />
+              <mxPoint x="379" y="632" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="14ufPdENfqIpYoA-KupI-34" value="данные измерений" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="14ufPdENfqIpYoA-KupI-23" connectable="0" vertex="1">
+        <mxCell id="14ufPdENfqIpYoA-KupI-34" value="телеметрия" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="14ufPdENfqIpYoA-KupI-23" connectable="0" vertex="1">
           <mxGeometry x="0.1519" y="1" relative="1" as="geometry">
-            <mxPoint x="4" y="28" as="offset" />
+            <mxPoint x="6" y="7" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="14ufPdENfqIpYoA-KupI-24" value="Приводы стенда" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="255" y="741" width="110" height="50" as="geometry" />
+          <mxGeometry x="508" y="590" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="14ufPdENfqIpYoA-KupI-26" value="Системный контекст — система управления испытательным стендом" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;" parent="1" vertex="1">
           <mxGeometry x="20" y="360" width="170" height="60" as="geometry" />
@@ -101,7 +101,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ecE3EmpL1Jt4BeZxKs1J" name="Statechart -- Legacy External Behavior">
-    <mxGraphModel dx="3416" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4276" dy="1672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />

@@ -1,0 +1,51 @@
+site_name: Документация оператора стенда
+site_description: Руководство по интерфейсу и телеметрии стенда тестирования БВС
+site_author: UAS Test System
+
+docs_dir: docs
+site_dir: site/operator
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+
+nav:
+  - Главная: index.md
+
+  - Оператор:
+      - Глоссарий:
+          - Угол атаки: operator/glossary/angle-of-attack.md
+          - Ось Y: operator/glossary/axis-y.md
+          - Ось Z: operator/glossary/axis-z.md
+          - Шкала Бофорта: operator/glossary/beaufort-scale.md
+          - Направление: operator/glossary/heading.md
+          - Механика стенда: operator/glossary/mechanics.md
+          - Тангаж: operator/glossary/pitch.md
+          - Телеметрия: operator/glossary/telemetry.md
+          - Интерфейс: operator/glossary/ui.md
+          - Рыскание: operator/glossary/yaw.md
+
+  - Общие материалы:
+      - Кинематика стенда: shared/stand-kinematics.md
+      - Телеметрия: shared/telemetry.md
+      - Термины и соответствия: shared/terminology-and-mapping.md

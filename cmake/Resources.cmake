@@ -3,7 +3,7 @@
 function(deploy_runtime_assets TARGET_NAME)
     set(ASSETS
         "${PROJECT_SOURCE_DIR}/config/report.toml"
-        "${PROJECT_SOURCE_DIR}/config/uav.toml"
+        "${PROJECT_SOURCE_DIR}/config/uav.example.toml"
         "${PROJECT_SOURCE_DIR}/config/telemetry.toml"
     )
 

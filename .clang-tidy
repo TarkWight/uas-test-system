@@ -1,0 +1,47 @@
+Checks: >
+  clang-analyzer-*,
+  bugprone-unused-return-value,
+  bugprone-use-after-move,
+  bugprone-suspicious-missing-comma,
+  bugprone-integer-division,
+  bugprone-misplaced-widening-cast,
+  bugprone-suspicious-semicolon,
+  bugprone-branch-clone,
+
+  readability-function-size,
+  readability-identifier-length,
+  readability-identifier-naming,
+
+  modernize-use-nullptr,
+  modernize-avoid-c-arrays,
+
+  cppcoreguidelines-use-enum-class,
+
+  performance-for-range-copy,
+  performance-inefficient-string-concatenation,
+
+  overloaded-signal,connect-by-name,connect-non-signal,qstring-comparison-to-implicit-char,wrong-qevent-cast,lambda-in-connect,lambda-unique-connection,qdatetime-utc,qgetenv,qstring-insensitive-allocation,fully-qualified-moc-types,unused-non-trivial-variable,connect-not-normalized,mutable-container-key,qenums,qmap-with-pointer-key,qstring-ref,strict-iterators,writing-to-temporary,container-anti-pattern,qcolor-from-literal,qfileinfo-exists,qstring-arg,empty-qstringliteral,qt-macros,temporary-iterator,wrong-qglobalstatic,lowercase-qml-type-name,no-module-include,use-static-qregularexpression,auto-unexpected-qstringbuilder,connect-3arg-lambda,const-signal-or-slot,detaching-temporary,foreach,incorrect-emit,install-event-filter,non-pod-global-static,post-event,qdeleteall,qlatin1string-non-ascii,qproperty-without-notify,qstring-left,range-loop-detach,range-loop-reference,returning-data-from-temporary,rule-of-two-soft,child-event-qobject-cast,virtual-signal,overridden-signal,qhash-namespace,skipped-base-method,readlock-detaching
+
+WarningsAsErrors: '*'
+
+HeaderFilterRegex: '(.*/)?src/.*'
+FormatStyle: file
+
+CheckOptions:
+  - { key: readability-function-size.ParameterThreshold, value: 4 }
+  - { key: readability-function-size.LineThreshold, value: 80 }
+  - { key: readability-function-size.StatementThreshold, value: 200 }
+
+  - { key: readability-identifier-length.MinimumVariableNameLength, value: 3 }
+  - { key: readability-identifier-length.MinimumFunctionNameLength, value: 3 }
+  - { key: readability-identifier-length.MinimumParameterNameLength, value: 3 }
+
+  - { key: readability-identifier-length.IgnoredVariableNames,  value: '^(ad|at|by|db|di|dx|dy|i|id|j|no|ok|on|op|pk|px|py|t|to|ui|vc|vm|x|y|z)$' }
+  - { key: readability-identifier-length.IgnoredParameterNames, value: '^(ad|at|by|db|di|dx|dy|i|id|j|no|ok|on|op|pk|px|py|t|to|ui|vc|vm|x|y|z)$' }
+  - { key: readability-identifier-length.IgnoredMemberNames,    value: '^(ad|at|by|db|di|dx|dy|i|id|j|no|ok|on|op|pk|px|py|t|to|ui|vc|vm|x|y|z)$' }
+
+  - { key: readability-identifier-naming.ClassCase, value: CamelCase }
+  - { key: readability-identifier-naming.StructCase, value: CamelCase }
+  - { key: readability-identifier-naming.EnumCase, value: CamelCase }
+  - { key: readability-identifier-naming.FunctionCase, value: camelBack }
+  - { key: readability-identifier-naming.VariableCase, value: camelBack }

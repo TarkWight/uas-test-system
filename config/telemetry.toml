@@ -1,0 +1,12 @@
+[telemetry]
+poll_interval_ms = 1000
+
+[telemetry.axis0]
+host = "127.0.0.1"
+port = 11540
+enabled = true
+
+[telemetry.axis1]
+host = "127.0.0.1"
+port = 11520
+enabled = true

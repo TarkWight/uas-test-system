@@ -1,0 +1,43 @@
+[uav]
+model = ""
+serial_number = ""
+firmware_version = "1.1.2.32"
+
+[uav.performance]
+flight_payload = 15.0
+drag_ratio_percent = 89.0
+equipment_current = 0.020
+operation_range = 15.99
+max_speed = 160.0
+max_altitude = 130.99
+max_flight_time = 30.0
+communication_type = "Glonass"
+firmware_version = "1.1.2.32"
+
+[uav.propeller]
+model = ""
+configuration = ""
+diameter = 45.0
+power = 10.0
+max_rpm = 10000
+blade_count = 3
+material = ""
+
+[uav.battery]
+model = ""
+type = ""
+capacity_mah = 18000
+cell_count = 6
+discharge_rate_c = 6
+weight = 2.4
+cell_voltage = 3.8
+
+[uav.motor]
+model = ""
+shaft_diameter = 8.0
+count = 4
+manufacturer = "T_Motors"
+kv = 480
+max_thrust_kg = 1.30
+peak_current_a = 13.99
+weight = 3.30

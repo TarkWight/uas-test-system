@@ -1,0 +1,7 @@
+[report]
+title = "Протокол испытаний беспилотной авиационной системы"
+
+[report.organization]
+name = "Tark Wight Group"
+license_number = "1234567"
+address = "планета Земля"

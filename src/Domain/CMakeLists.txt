@@ -4,6 +4,7 @@ target_sources(uas_domain
     PRIVATE
         Common/Id.hpp
         Common/Time.hpp
+        Common/Time.cpp
 )
 
 target_include_directories(uas_domain

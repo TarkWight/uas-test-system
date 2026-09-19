@@ -5,11 +5,11 @@ namespace domain {
 namespace {
 
 constexpr Seconds minRequiredDuration{1};
-constexpr auto maxDuration = std::chrono::hours{24};
+constexpr Seconds maxDuration = std::chrono::hours{24};
 
 } // namespace
 
-TestDurationCreationResult TestDuration::required(Seconds requested) {
+TestDurationCreationResult TestDuration::required(Seconds requested) noexcept {
     if (requested < minRequiredDuration) {
         return {
             TestDuration{minRequiredDuration},
@@ -22,13 +22,11 @@ TestDurationCreationResult TestDuration::required(Seconds requested) {
     }
 
     if (requested > maxDuration) {
-        const auto applied = std::chrono::duration_cast<Seconds>(maxDuration);
-
         return {
-            TestDuration{applied},
+            TestDuration{maxDuration},
             TimeAdjustment{
                 .requested = requested,
-                .applied = applied,
+                .applied = maxDuration,
                 .reason = TimeAdjustmentReason::AboveMaximum,
             },
         };
@@ -40,7 +38,7 @@ TestDurationCreationResult TestDuration::required(Seconds requested) {
     };
 }
 
-TestDurationCreationResult TestDuration::optional(Seconds requested) {
+TestDurationCreationResult TestDuration::optional(Seconds requested) noexcept {
     constexpr Seconds minimum{0};
 
     if (requested < minimum) {
@@ -55,13 +53,11 @@ TestDurationCreationResult TestDuration::optional(Seconds requested) {
     }
 
     if (requested > maxDuration) {
-        const auto applied = std::chrono::duration_cast<Seconds>(maxDuration);
-
         return {
-            TestDuration{applied},
+            TestDuration{maxDuration},
             TimeAdjustment{
                 .requested = requested,
-                .applied = applied,
+                .applied = maxDuration,
                 .reason = TimeAdjustmentReason::AboveMaximum,
             },
         };
@@ -80,7 +76,7 @@ Seconds TestDuration::value() const noexcept {
     return value_;
 }
 
-ElapsedTimeCreationResult ElapsedTime::from(Seconds requested) {
+ElapsedTimeCreationResult ElapsedTime::from(Seconds requested) noexcept {
     constexpr Seconds minimum{0};
 
     if (requested < minimum) {
@@ -107,7 +103,7 @@ Seconds ElapsedTime::value() const noexcept {
     return value_;
 }
 
-RemainingTimeCreationResult RemainingTime::from(Seconds requested) {
+RemainingTimeCreationResult RemainingTime::from(Seconds requested) noexcept {
     constexpr Seconds minimum{0};
 
     if (requested < minimum) {

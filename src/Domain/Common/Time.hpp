@@ -21,8 +21,8 @@ struct RemainingTimeCreationResult;
 
 class TestDuration final {
   public:
-    [[nodiscard]] static TestDurationCreationResult required(Seconds requested);
-    [[nodiscard]] static TestDurationCreationResult optional(Seconds requested);
+    [[nodiscard]] static TestDurationCreationResult required(Seconds requested) noexcept;
+    [[nodiscard]] static TestDurationCreationResult optional(Seconds requested) noexcept;
 
     [[nodiscard]] Seconds value() const noexcept;
 
@@ -39,7 +39,7 @@ struct TestDurationCreationResult final {
 
 class ElapsedTime final {
   public:
-    [[nodiscard]] static ElapsedTimeCreationResult from(Seconds requested);
+    [[nodiscard]] static ElapsedTimeCreationResult from(Seconds requested) noexcept;
 
     [[nodiscard]] Seconds value() const noexcept;
 
@@ -56,7 +56,7 @@ struct ElapsedTimeCreationResult final {
 
 class RemainingTime final {
   public:
-    [[nodiscard]] static RemainingTimeCreationResult from(Seconds requested);
+    [[nodiscard]] static RemainingTimeCreationResult from(Seconds requested) noexcept;
 
     [[nodiscard]] Seconds value() const noexcept;
 

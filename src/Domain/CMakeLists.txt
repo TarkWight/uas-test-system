@@ -7,6 +7,7 @@ target_sources(uas_domain
         Common/Time.cpp
 
         Axis/AxisId.hpp
+        Axis/AxisState.hpp
 )
 
 target_include_directories(uas_domain

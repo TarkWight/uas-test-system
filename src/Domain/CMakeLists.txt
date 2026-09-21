@@ -8,6 +8,7 @@ target_sources(uas_domain
 
         Axis/AxisId.hpp
         Axis/AxisState.hpp
+        Axis/AxisTelemetrySample.hpp
 )
 
 target_include_directories(uas_domain

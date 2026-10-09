@@ -2451,7 +2451,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="kN6bL09-AVYyka3sc-aA" name="ДК">
-    <mxGraphModel dx="11030" dy="14690" grid="1" gridSize="40" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="11680" dy="15767" grid="1" gridSize="40" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2577,6 +2577,9 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="kuFTXM61EcbjZ5vxmIU8-168" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" edge="1" parent="1" source="kuFTXM61EcbjZ5vxmIU8-26" target="kuFTXM61EcbjZ5vxmIU8-161">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="kuFTXM61EcbjZ5vxmIU8-26" value="TestPreparationService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-6480" y="-12960" width="480" height="86" as="geometry" />
         </mxCell>
@@ -2602,6 +2605,16 @@
             <Array as="points">
               <mxPoint x="-6160" y="-12720" />
               <mxPoint x="-6160" y="-12720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kuFTXM61EcbjZ5vxmIU8-174" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1" source="kuFTXM61EcbjZ5vxmIU8-36" target="kuFTXM61EcbjZ5vxmIU8-169">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-6400" y="-12840" />
+              <mxPoint x="-6520" y="-12840" />
+              <mxPoint x="-6520" y="-13120" />
+              <mxPoint x="-6740" y="-13120" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -2928,6 +2941,36 @@
               <mxPoint x="-8720" y="-12880" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="kuFTXM61EcbjZ5vxmIU8-161" value="ControlScenario" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-6460" y="-13480" width="440" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="kuFTXM61EcbjZ5vxmIU8-166" value="&lt;div&gt;- identifier : String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kuFTXM61EcbjZ5vxmIU8-161">
+          <mxGeometry y="26" width="440" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kuFTXM61EcbjZ5vxmIU8-167" value="&lt;div&gt;- name : String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kuFTXM61EcbjZ5vxmIU8-161">
+          <mxGeometry y="52" width="440" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kuFTXM61EcbjZ5vxmIU8-162" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="kuFTXM61EcbjZ5vxmIU8-161">
+          <mxGeometry y="78" width="440" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="kuFTXM61EcbjZ5vxmIU8-163" value="&lt;div&gt;+ impactAt(elapsed : Duration, baseImpact : WindImpact) : WindImpact&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kuFTXM61EcbjZ5vxmIU8-161">
+          <mxGeometry y="86" width="440" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kuFTXM61EcbjZ5vxmIU8-165" value="&lt;div&gt;+ worstCase(window : Duration, baseImpact : WindImpact) : WindImpact&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kuFTXM61EcbjZ5vxmIU8-161">
+          <mxGeometry y="112" width="440" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kuFTXM61EcbjZ5vxmIU8-164" value="&lt;div&gt;+ buildProfile(duration : Duration, baseImpact : WindImpact) : WindControlProfile&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kuFTXM61EcbjZ5vxmIU8-161">
+          <mxGeometry y="138" width="440" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kuFTXM61EcbjZ5vxmIU8-169" value="&lt;div style=&quot;text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;ReadinessEvaluator&lt;/span&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-7000" y="-13480" width="520" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="kuFTXM61EcbjZ5vxmIU8-170" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="kuFTXM61EcbjZ5vxmIU8-169">
+          <mxGeometry y="40" width="520" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="kuFTXM61EcbjZ5vxmIU8-171" value="&lt;div&gt;+ evaluate(specification : UavSpecification,&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;impact : WindImpact) : ReadinessAssessment&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kuFTXM61EcbjZ5vxmIU8-169">
+          <mxGeometry y="48" width="520" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

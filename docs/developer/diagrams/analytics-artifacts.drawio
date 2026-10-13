@@ -2451,7 +2451,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="kN6bL09-AVYyka3sc-aA" name="ДК">
-    <mxGraphModel dx="17205" dy="11884" grid="1" gridSize="40" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="16884" dy="11595" grid="1" gridSize="40" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3032,6 +3032,14 @@
         <mxCell id="kuFTXM61EcbjZ5vxmIU8-203" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="kuFTXM61EcbjZ5vxmIU8-202" vertex="1">
           <mxGeometry y="26" width="200" height="8" as="geometry" />
         </mxCell>
+        <mxCell id="W2_Oyox1NAaQATt-mDCR-218" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;endArrow=open;endFill=0;" edge="1" parent="1" source="kuFTXM61EcbjZ5vxmIU8-204" target="kuFTXM61EcbjZ5vxmIU8-243">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-10500" y="-9560" />
+              <mxPoint x="-10500" y="-9560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="kuFTXM61EcbjZ5vxmIU8-204" value="StandProtocolCodec" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;swimlaneFillColor=default;" parent="1" vertex="1">
           <mxGeometry x="-10600" y="-9692" width="440" height="86" as="geometry" />
         </mxCell>
@@ -3149,7 +3157,7 @@
         <mxCell id="kuFTXM61EcbjZ5vxmIU8-236" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="kuFTXM61EcbjZ5vxmIU8-235" vertex="1">
           <mxGeometry y="26" width="200" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="kuFTXM61EcbjZ5vxmIU8-237" value="InProcessEventPublisher" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="kuFTXM61EcbjZ5vxmIU8-237" value="PollingStandGateway" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-11200" y="-9947" width="200" height="34" as="geometry" />
         </mxCell>
         <mxCell id="kuFTXM61EcbjZ5vxmIU8-238" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="kuFTXM61EcbjZ5vxmIU8-237" vertex="1">
@@ -3193,7 +3201,7 @@
           <mxGeometry y="104" width="200" height="8" as="geometry" />
         </mxCell>
         <mxCell id="kuFTXM61EcbjZ5vxmIU8-243" value="BinaryFrame" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-10600" y="-9340" width="200" height="34" as="geometry" />
+          <mxGeometry x="-10600" y="-9534" width="200" height="34" as="geometry" />
         </mxCell>
         <mxCell id="kuFTXM61EcbjZ5vxmIU8-244" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="kuFTXM61EcbjZ5vxmIU8-243" vertex="1">
           <mxGeometry y="26" width="200" height="8" as="geometry" />
